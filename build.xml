@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="MyProject" default="refresh">
+  <target name="msg">
+      <echo message="Reproducing Problem: failed to create task or type eclipse.refreshLocal"/>
+  </target>
+  <target name="refresh" depends="msg">
+      <eclipse.refreshLocal resource="MyProject/src" depth="infinite"/>
+  </target>
+</project>
